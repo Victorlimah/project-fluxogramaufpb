@@ -1,14 +1,46 @@
 * {
   box-sizing: border-box;
   --corDisciplina: white;
+  --corDisciplinaHover: #d3cdcc;
 }
 
 body {
   background-color: #e9e6e6fa;
 }
 
+header {
+  width: 100vw;
+  height: 65px;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background-color: #62e426fa;
+  color: white;
+  font-size: 40px;
+}
+
+header ion-icon {
+  font-size: 40px;
+  margin-left: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 55px;
+  margin-right: 25px;
+}
+
 main {
   display: flex;
+  margin-top: 50px;
 }
 
 main div {
@@ -21,7 +53,7 @@ main div {
 }
 
 div h3 {
-  padding: 12px 0 12px 0;
+  padding: 25px 0 20px 0;
 }
 article {
   width: 140px;
@@ -32,4 +64,14 @@ article {
   border-radius: 12px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.selecionado {
+  background-color: #62e426fa;
+}
+
+.cursando {
+  background-color: rgb(204, 201, 16);
 }
